@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="">
+        <option disabled selected></option>
+        <option value="apple">apple</option>
+        <option value="desktop">banana</option>
+    </select>
+    <div class="result"><img src="" alt="" id="img"><img src="" alt="" id="img2"></div>
+
+    <script>
+        // console.log('test');
+        document.querySelector('select').addEventListener('change',(e)=>{
+            // console.log('tijaabo');
+            if(e.target.value == 'apple'){
+                // console.log('kkkkk');
+                let img = document.getElementById('img2');
+                img.src="https://images.unsplash.com/photo-1630563451961-ac2ff27616ab?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                // img.src="https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+             
+            }else{
+                console.log('akjlka'); let img = document.getElementById('img');
+
+                img.src="https://images.unsplash.com/photo-1587334206596-c0f9f7dccbe6?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                // img.src="https://images.unsplash.com/photo-1605990966850-68541fcd6f43?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                // img.src="https://images.unsplash.com/photo-1593479815261-f092750c5046?q=80&w=1577&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+            }
+        })
+    </script>
+</body>
+</html>
